@@ -11,3 +11,4 @@ class Project(Base):
 
     organization = relationship("Organization", back_populates="projects")
     members = relationship("ProjectUser", back_populates="project")
+    issues = relationship("Issue", back_populates="project")
